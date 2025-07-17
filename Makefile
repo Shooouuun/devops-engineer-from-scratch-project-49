@@ -15,3 +15,9 @@ package-install:
 
 reinstallation: #переустановка проекта шоб не забыть команду
 	uv tool install --force dist/<имя-пакета>
+
+lint:
+	uv run ruff check brain_games
+
+lint--fix:
+	uv run ruff check --fix brain_games
