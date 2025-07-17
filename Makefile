@@ -12,3 +12,6 @@ build:
 
 package-install:
 	uv tool install dist/*.whl
+
+reinstallation: #переустановка проекта шоб не забыть команду
+	uv tool install --force dist/<имя-пакета>
