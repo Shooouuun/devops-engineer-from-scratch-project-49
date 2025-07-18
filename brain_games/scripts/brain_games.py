@@ -6,7 +6,7 @@ from brain_games.scripts.brain_even import play_even_game
 
 def main():
     print("Welcome to the Brain Games!")
-    play_even_game()
+    welcome_user()
 
 
 if __name__ == '__main__':
