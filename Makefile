@@ -10,13 +10,16 @@ brain-games:
 brain-even:
 	uv run brain-even
 
+brain-calc:
+	uv run brain-calc
+
 build:
 	uv build
 
 package-install:
 	uv tool install dist/*.whl
 
-reinstallation: #переустановка проекта шоб не забыть команду
+reinstallation: 
 	uv tool install --force dist/brain_games-0.1.0-py3-none-any.whl
 
 lint:
