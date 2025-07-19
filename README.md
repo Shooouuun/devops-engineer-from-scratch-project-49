@@ -1,6 +1,6 @@
 ## 🎥 Demonstration of work:
 
-[![asciicast](https://asciinema.org/a/3r2HG5NYbCNygZmvFXKfSF8Xo.svg?size=medium&speed=1)](https://asciinema.org/a/3r2HG5NYbCNygZmvFXKfSF8Xo)
+[![asciicast](https://asciinema.org/a/QpY3aIncl5dCwFRuGBOSPiGNd.svg?speed=1&size=medium)](https://asciinema.org/a/QpY3aIncl5dCwFRuGBOSPiGNd)
 
 
 ### Hexlet tests and linter status:
