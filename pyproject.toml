@@ -1,6 +1,6 @@
 [project]
-name = "brain-games"
-version = "0.1.0"
+name = "hexlet-code"
+version = "1.0.0"
 description = "A set of simple brain-training games for the command line: Even, Calc, GCD, Progression, and Prime."
 readme = "README.md"
 authors = [{ name = "Shauny", email = "shooouuun@gmail.com" }]
