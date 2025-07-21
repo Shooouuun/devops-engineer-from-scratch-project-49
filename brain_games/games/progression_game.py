@@ -8,6 +8,7 @@ MAX_START = 30
 MIN_STEP = 1
 MAX_STEP = 10
 
+
 def generate_round():
     start = random.randint(MIN_START, MAX_START)
     step = random.randint(MIN_STEP, MAX_STEP)

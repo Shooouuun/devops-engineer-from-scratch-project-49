@@ -3,10 +3,13 @@
 
 from brain_games.cli import welcome_user
 
+
 def main():
     print("Welcome to the Brain Games!")
     welcome_user()
-    print("To start the game, run brain-even or brain-calc.")
+    print("To start the game, run brain-even,\n" \
+    "brain-calc, brain_gcd, brain_prime or brain_progression.")
+
 
 if __name__ == '__main__':
     main()
