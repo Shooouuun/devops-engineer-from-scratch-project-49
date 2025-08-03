@@ -1,12 +1,10 @@
 import random
-
-RULES = 'What is the result of the expression?'
-
+from .constants import RULES_CALC, MIN_OPERAND, MAX_OPERAND, ALLOWED_OPERATORS
 
 def get_round_data():
-    number_one = random.randint(1, 20)
-    number_two = random.randint(1, 20)
-    operator = random.choice(['+', '-', '*'])
+    number_one = random.randint(MIN_OPERAND, MAX_OPERAND)
+    number_two = random.randint(MIN_OPERAND, MAX_OPERAND)
+    operator = random.choice(ALLOWED_OPERATORS)
 
     question = f"{number_one} {operator} {number_two}"
     correct_answer = str(eval(question))

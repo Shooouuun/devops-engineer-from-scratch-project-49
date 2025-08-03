@@ -1,18 +1,22 @@
 import random
-
-RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-
+from .constants import (
+    RULES_PRIME,
+    MIN_PRIME_NUMBER,
+    MAX_PRIME_NUMBER,
+    MIN_PRIME_DIVISOR,
+    PRIME_ANSWER_YES,
+    PRIME_ANSWER_NO
+)
 
 def is_prime(n):
-    if n < 2:
+    if n < MIN_PRIME_DIVISOR:
         return False
-    for i in range(2, int(n ** 0.5) + 1):
+    for i in range(MIN_PRIME_DIVISOR, int(n ** 0.5) + 1):
         if n % i == 0:
             return False
     return True
 
-
 def get_round():
-    number = random.randint(1, 100)
-    correct_answer = "yes" if is_prime(number) else "no"
+    number = random.randint(MIN_PRIME_NUMBER, MAX_PRIME_NUMBER)
+    correct_answer = PRIME_ANSWER_YES if is_prime(number) else PRIME_ANSWER_NO
     return str(number), correct_answer

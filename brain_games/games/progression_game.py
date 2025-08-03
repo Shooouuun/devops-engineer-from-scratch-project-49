@@ -1,13 +1,14 @@
 import random
-
-RULES = 'What number is missing in the progression?'
-
-PROGRESSION_LENGTH = 10
-MIN_START = 1
-MAX_START = 30
-MIN_STEP = 1
-MAX_STEP = 10
-
+from .constants import (
+    RULES_PROGRESSION,
+    PROGRESSION_LENGTH,
+    MIN_START,
+    MAX_START,
+    MIN_STEP,
+    MAX_STEP,
+    HIDDEN_PLACEHOLDER,
+    HIDDEN_INDEX_MIN
+)
 
 def generate_round():
     start = random.randint(MIN_START, MAX_START)
@@ -15,10 +16,9 @@ def generate_round():
 
     progression = [str(start + i * step) for i in range(PROGRESSION_LENGTH)]
 
-    hidden_index = random.randint(0, PROGRESSION_LENGTH - 1)
+    hidden_index = random.randint(HIDDEN_INDEX_MIN, PROGRESSION_LENGTH - 1)
     correct_answer = progression[hidden_index]
-    progression[hidden_index] = '..'
+    progression[hidden_index] = HIDDEN_PLACEHOLDER
 
     question = ' '.join(progression)
-
     return question, correct_answer

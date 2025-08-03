@@ -1,6 +1,5 @@
 import prompt
 
-
 def run_game(get_round_data, rules):
     name = prompt.string("Welcome to the Brain Games!\nMay I have your name? ")
     print(f"Hello, {name}!")
@@ -20,6 +19,6 @@ def run_game(get_round_data, rules):
                 f"Correct answer was '{correct_answer}'."
             )
             print(f"Let's try again, {name}!")
-            return
-
-    print(f"Congratulations, {name}!")
+            break
+    else:
+        print(f"Congratulations, {name}!")
