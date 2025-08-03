@@ -8,6 +8,8 @@ from .constants import (
     PRIME_ANSWER_NO
 )
 
+RULES = RULES_PRIME 
+
 def is_prime(n):
     if n < MIN_PRIME_DIVISOR:
         return False

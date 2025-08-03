@@ -10,6 +10,8 @@ from .constants import (
     HIDDEN_INDEX_MIN
 )
 
+RULES = RULES_PROGRESSION 
+
 def generate_round():
     start = random.randint(MIN_START, MAX_START)
     step = random.randint(MIN_STEP, MAX_STEP)

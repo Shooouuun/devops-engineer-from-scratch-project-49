@@ -6,6 +6,8 @@ from .constants import (
     MAX_GCD_NUMBER
 )
 
+RULES = RULES_GCD 
+
 def generate_round():
     number1 = random.randint(MIN_GCD_NUMBER, MAX_GCD_NUMBER)
     number2 = random.randint(MIN_GCD_NUMBER, MAX_GCD_NUMBER)
