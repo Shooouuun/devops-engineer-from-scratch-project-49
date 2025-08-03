@@ -1,7 +1,9 @@
 import random
 from .constants import RULES_CALC, MIN_OPERAND, MAX_OPERAND, ALLOWED_OPERATORS
 
+
 RULES = RULES_CALC 
+
 
 def get_round_data():
     number_one = random.randint(MIN_OPERAND, MAX_OPERAND)

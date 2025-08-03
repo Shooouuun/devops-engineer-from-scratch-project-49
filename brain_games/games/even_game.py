@@ -7,7 +7,9 @@ from .constants import (
     EVEN_ANSWER_NO
 )
 
+
 RULES = RULES_EVEN 
+
 
 def get_round_data():
     number = random.randint(MIN_EVEN_NUMBER, MAX_EVEN_NUMBER)
