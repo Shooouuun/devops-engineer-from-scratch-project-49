@@ -1,13 +1,13 @@
 import random
+
 from .constants import (
-    RULES_PRIME,
-    MIN_PRIME_NUMBER,
     MAX_PRIME_NUMBER,
     MIN_PRIME_DIVISOR,
+    MIN_PRIME_NUMBER,
+    PRIME_ANSWER_NO,
     PRIME_ANSWER_YES,
-    PRIME_ANSWER_NO
+    RULES_PRIME,
 )
-
 
 RULES = RULES_PRIME 
 
@@ -19,6 +19,7 @@ def is_prime(n):
         if n % i == 0:
             return False
     return True
+
 
 def get_round():
     number = random.randint(MIN_PRIME_NUMBER, MAX_PRIME_NUMBER)

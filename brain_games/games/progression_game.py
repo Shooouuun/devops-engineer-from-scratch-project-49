@@ -1,15 +1,15 @@
 import random
-from .constants import (
-    RULES_PROGRESSION,
-    PROGRESSION_LENGTH,
-    MIN_START,
-    MAX_START,
-    MIN_STEP,
-    MAX_STEP,
-    HIDDEN_PLACEHOLDER,
-    HIDDEN_INDEX_MIN
-)
 
+from .constants import (
+    HIDDEN_INDEX_MIN,
+    HIDDEN_PLACEHOLDER,
+    MAX_START,
+    MAX_STEP,
+    MIN_START,
+    MIN_STEP,
+    PROGRESSION_LENGTH,
+    RULES_PROGRESSION,
+)
 
 RULES = RULES_PROGRESSION 
 

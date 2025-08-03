@@ -1,6 +1,6 @@
 import random
-from .constants import RULES_CALC, MIN_OPERAND, MAX_OPERAND, ALLOWED_OPERATORS
 
+from .constants import ALLOWED_OPERATORS, MAX_OPERAND, MIN_OPERAND, RULES_CALC
 
 RULES = RULES_CALC 
 

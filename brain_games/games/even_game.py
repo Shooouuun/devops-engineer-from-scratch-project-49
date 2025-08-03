@@ -1,12 +1,12 @@
 import random
-from .constants import (
-    RULES_EVEN,
-    MIN_EVEN_NUMBER,
-    MAX_EVEN_NUMBER,
-    EVEN_ANSWER_YES,
-    EVEN_ANSWER_NO
-)
 
+from .constants import (
+    EVEN_ANSWER_NO,
+    EVEN_ANSWER_YES,
+    MAX_EVEN_NUMBER,
+    MIN_EVEN_NUMBER,
+    RULES_EVEN,
+)
 
 RULES = RULES_EVEN 
 

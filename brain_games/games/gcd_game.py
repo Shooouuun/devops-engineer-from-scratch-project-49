@@ -1,11 +1,7 @@
 import math
 import random
-from .constants import (
-    RULES_GCD,
-    MIN_GCD_NUMBER,
-    MAX_GCD_NUMBER
-)
 
+from .constants import MAX_GCD_NUMBER, MIN_GCD_NUMBER, RULES_GCD
 
 RULES = RULES_GCD 
 
